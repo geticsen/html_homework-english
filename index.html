@@ -1,10 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>HTML</title>
+	<title>Unified Modeling Language Theory Test</title>
+	<style>
+	*{
+	margin:0px;
+	padding:0px;
+	}
+	ol li{
+		margin-left:50px;
+	}
+	ol textarea{
+		margin-left:50px;
+	}
+	ul li{
+		list-style-type:none;
+		margin-left:10px;
+	}
+	form{
+		margin-left:5px;
+	}
+	textarea{
+	position:relative;
+	}
+	</style>
 </head>
 <body>
+<form action="/actionController" method="POST">
+	<h1>Unified Modeling Language Theory Test</h1>
+	<table border=0>
+		<tr>
+			<td>Test Subject:</td>
+			<td>Unified Modeling Language</td>
+			<td>Time:</td>
+			<td>100 minute</td>
+			<td>Socre:</td>
+			<td>100</td>
+		</tr>
+		<tr>
+			<td>Class:</td>
+			<td><input type="text" name="class"></td>
+			<td>Student ID:</td>
+			<td><input type="text" name="indentify"></td>
+			<td>Name:</td>
+			<td><input type="text" name="name"></td>
+		</tr>
+	</table>
+	<h2>1、Fill in the blanks(5 points per space,20 points) total</h2>
+	<ol>
+		<li>The full name of UML in Chinese is:<input type="text" name="UML_in_Chinese"></li>
+		<li>The most prominet feature of the object is<input type="text" name="UML_in_Chinese"><input type="text" name="UML_in_Chinese"><input type="text" name="UML_in_Chinese"></li>
+	</ol>
+	<h2>2、Multiple choice question(10 points per space,20 points total)</h2>
+	<ol>
+		<li>
+			The relationship between UML and software engineering is:
+			<ul>
+				<li><input name="c1" type="radio" value="1">(A) UML is software engineering</li>
+				<li><input name="c1" type="radio" value="2">(B) UML participates in several stages of the software development process in software engineering</li>
+				<li><input name="c1" type="radio" value="3">(C) UML has nothing to do with software engineering</li>
+				<li><input name="c1" type="radio" value="4">(D) UML is part of software engineering</li>
+			</ul>
+		</li>
+		<li>
+			The relationship between UML and software engineering is:
+			<ul>
+				<li><input name="c2" type="radio" value="1">(A) Single inheritance</li>
+				<li><input name="c2" type="radio" value="2">(B) Multiple inheritance</li>
+				<li><input name="c2" type="radio" value="3">(C) Single inheritance and multiple inheritance support</li>
+				<li><input name="c2" type="radio" value="4">(D) Single inheritance and multiple inheritance are not supported</li>
+			</ul>
+		</li>
+	</ol>
+	<h2>3、Multiple choice (10 points per space,20 points total) </h2>
+	<ol>
+		<li>
+			The granularity of the use case is divided into the following three:
+			<ul>
+				<li><input name="c3" type="checkbox" value="1">(A) Overview level </li>
+				<li><input name="c3" type="checkbox" value="2">(B) Demand level</li>
+				<li><input name="c3" type="checkbox" value="3">(C) User target level</li>
+				<li><input name="c3" type="checkbox" value="4">(D) Sub-function level</li>
+			</ul>
+		</li>
+		<li>
+			 The class diagram consists of which of the following three parts:
+			<ul>
+				<li><input name="c4" type="checkbox" value="1">(A) Name </li>
+				<li><input name="c4" type="checkbox" value="2">(B) Attribute </li>
+				<li><input name="c4" type="checkbox" value="3">(C) Operation</li>
+				<li><input name="c4" type="checkbox" value="4">(D) Function</li>
+			</ul>
+		</li>
+	</ol>
+	<h2>4、True or False (10 points per space,20 points total) </h2>
+	<ol>
+		<li>
+			Use case diagrams are only used to communicate with customers to determine demand.
+			<input name="t1" type="radio" value="0">√
+			<input name="t1" type="radio" value="1">×
+		</li>
+		<li>
+			In the sate diagram,the termination state allows any number multiple in a state diagram.
+			<input name="t2" type="radio" value="0">√
+			<input name="t2" type="radio" value="1">×
+		</li>
+	</ol>
+	<h2>5、Short answer question (20 points per space,20 points total) </h2>
+	<ol>
+		<li>Briefly describe what the model is and how behaves?</li>
+		<textarea name="text" cols="100" rows="8">
+		A model is a simplification and abstraction of the real world. A model is an expression of the system,process, thing or concept of research. Can be a physical entity; can be a certain graphic; or a mathematical expression.
+		</textarea>
+	</ol>
+	<p><button type="submit">Calulating score</button></p>
+</form>
 
 </body>
 </html>
